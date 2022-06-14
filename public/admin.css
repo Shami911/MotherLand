@@ -1,0 +1,16 @@
+@media (min-width: 950px) {
+    .w-laptop-33 {
+        width: 32%;
+    }
+    .d-laptop-none {
+        display: none !important;
+    }
+}
+@media (max-width: 950px) {
+    .w-laptop-33 {
+        width: 100%;
+    }
+    .d-tel-none {
+        display: none !important;
+    }
+}
