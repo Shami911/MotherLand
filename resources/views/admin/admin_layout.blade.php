@@ -10,8 +10,8 @@
 
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="/assets/img/favicon.png" rel="icon">
+    <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link
@@ -19,18 +19,19 @@
         rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/media.css" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link href="/assets/css/media.css" rel="stylesheet">
+    
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 
@@ -196,6 +197,7 @@
                             </a>
                         </li>
 
+                        
 
                         <li class="nav-item">
                             <a class="nav-link" href="/admin_team_icons">
@@ -203,7 +205,6 @@
                                 Иконки для номеров
                             </a>
                         </li>
-
 
                         <li class="nav-item">
                             <a class="nav-link" href="/admin_portfoliodetails">
@@ -317,7 +318,7 @@
 
 
                         <li class="nav-item">
-                            <a class="nav-link" href="/admin_portfoliodetails">
+                            <a class="nav-link" href="/admin_portfoliodetails" style="color: #ced4da">
                                 <i class="bi bi-people-fill"></i>
                               Инфа о номере
                             </a>
@@ -362,16 +363,16 @@
     </div>
 
     <!-- Vendor JS Files 1 -->
-    <script src="assets1/vendor/purecounter/purecounter.js"></script>
-    <script src="assets1/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets1/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets1/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets1/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets1/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="assets1/vendor/php-email-form/validate.js"></script>
+    <script src="/assets1/vendor/purecounter/purecounter.js"></script>
+    <script src="/assets1/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets1/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="/assets1/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="/assets1/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="/assets1/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="/assets1/vendor/php-email-form/validate.js"></script>
 
     <!-- Template Main JS File 1-->
-    <script src="assets1/js/main.js"></script>
+    <script src="/assets1/js/main.js"></script>
 
     <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
@@ -390,19 +391,19 @@
 
 
 
-    <script src="https://unpkg.com/vue@3"></script>
     <!-- Vendor JS Files -->
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="/assets/vendor/aos/aos.js"></script>
+    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="/assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="/assets/vendor/php-email-form/validate.js"></script>
+    
     <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
-
+    <script src="/assets/js/main.js"></script>
+    
 </body>
 
 </html>

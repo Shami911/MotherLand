@@ -24,10 +24,10 @@
             <div class="row row-cols-3 g-2">
             
             @foreach ($portfoliodetails as $item)
-                <div class="col" data-aos="fade-up" data-aos-delay="100">
+            <div class="col" data-aos="fade-up" data-aos-delay="100">
                 <div class="card">
                     <img src="storage/AdminTeam/{{$item->img}}" class="card-img-top" alt="...">
-                    <div class="card-body">
+            f <div class="card-body">
                     {{-- <h5 class="card-title"><a href="">{{$item->name}}</a></h5> --}}
                     <p class="card-text">{{$item->slogan}} </p>
                     {{-- <p class="card-text">{{$item->work}} </p> --}}
@@ -40,7 +40,6 @@
             </div>
             @endforeach
         </div>
-    </div>
     </section>
 
 
@@ -92,19 +91,15 @@
                         </div>
                     </div>
             @endforeach
-            </div>
-         
-      </div>
-      <!-- End Left side columns -->
-</div>
+        </div>
+   
 
 </main>
 <!-- End #main -->
 
-</div>
 
 <!-- Modal Add Carousel -->
-<div class="modal fade" id="addportfolio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+{{-- <div class="modal fade" id="addportfolio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
    <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header d-flex border-0">
@@ -141,6 +136,6 @@
                 </form>
             </div>
     </div>
-</div>
+</div> --}}
 
 @endsection
