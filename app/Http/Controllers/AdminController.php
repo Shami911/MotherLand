@@ -17,6 +17,7 @@ use App\Models\Pricing;
 use App\Models\Faq;
 use App\Models\PointGallery;
 use App\Models\AdminTeamIcons;
+use App\Models\portfoliodetails;
 
 
 
@@ -796,6 +797,61 @@ public function edit_team($id, Request $data){
 public function delete_team($id){
     AdminTeam::find($id)->delete();
     return redirect()->route('admin_team');
+}
+// <!-- ======= Admin Team Section End ======= -->
+
+
+
+public function admin_portfoliodetails(){
+    $portfoliodetails = new portfoliodetails();
+    return view ('admin.admin_portfoliodetails' , ['portfoliodetails' => $portfoliodetails->all()]);
+}  
+public function add_portfoliodetails(Request $data){
+    $valid = $data->validate([
+        'img' => ['required', 'image', 'mimetypes:image/jpeg,image/png,image/webp'],
+        'slogan' => ['required'],
+    ]); 
+
+    $file = $data->file('img');
+    $upload_folder = 'public/portfoliodetails/'; //Создается автоматически
+    $filename = $file->getClientOriginalName(); //Сохраняем исходное название изображения
+    Storage::putFileAs($upload_folder, $file, $filename); 
+
+    $portfoliodetails = new portfoliodetails();
+    $portfoliodetails->img = $filename;
+    $portfoliodetails->slogan = $data->input('slogan');
+    $portfoliodetails->save();
+    return redirect()->route('admin_portfoliodetails');
+}
+
+public function edit_portfoliodetails($id, Request $data){
+    $valid = $data->validate([
+        'img' => ['image', 'mimetypes:image/jpeg,image/png,image/webp'],
+        'slogan' => ['required']
+    ]); 
+    
+    $portfoliodetails = portfoliodetails::find($id);
+    if($data->file('img') != '') {
+        $upload_folder = 'public/portfoliodetails/'; //Создается автоматически
+        $file = $data->file('img');
+        $filename = $file->getClientOriginalName();
+        Storage::delete($upload_folder . '/' . $team->img);
+        Storage::putFileAs($upload_folder, $file, $filename);    
+        $team->img = $filename;
+        Storage::putFileAs($upload_folder, $file, $filename); 
+    } else {
+        $portfoliodetails->img = $portfoliodetails->img;
+    }
+    
+    $portfoliodetails->slogan = $data->input('slogan');
+    $portfoliodetails->save();
+
+    return redirect()->route('admin_portfoliodetails');
+}  
+
+public function delete_portfoliodetails($id){
+    portfoliodetails::find($id)->delete();
+    return redirect()->route('admin_portfoliodetails');
 }
 // <!-- ======= Admin Team Section End ======= -->
 

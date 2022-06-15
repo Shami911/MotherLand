@@ -246,7 +246,7 @@
                     <ul id="portfolio-flters">
                         <li data-filter="*" class="filter-active me-2">Все</li>
                         @foreach ($point as $item)
-                            <li data-filter=".filter-{{ $item->id }}">{{ $item->title }}</li>
+                            <li data-filter=".filter-{{ $item->id }}" class="me-2">{{ $item->title }}</li>
                         @endforeach
                     </ul>
                 </div>
@@ -294,7 +294,7 @@
                 <form action="portfoliodetails" method="POST">
                     @csrf
              
-                <a href="portfoliodetails" class="details-link" title="More Details">
+                <a href="portfoliodetails/{{$item->id}}" class="details-link" title="More Details">
                     <div class="col" data-aos="fade-up" data-aos-delay="100">
                         <div class="card mt-3">
                             <img src="/storage/AdminTeam/{{ $item->img }}" style="height: 300px;object-fit:cover;"

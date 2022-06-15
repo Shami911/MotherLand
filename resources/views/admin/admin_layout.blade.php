@@ -204,6 +204,14 @@
                             </a>
                         </li>
 
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin_portfoliodetails">
+                                <i class="bi bi-people-fill"></i>
+                              Инфа о номере
+                            </a>
+                        </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="admin_faq">
                                 <i class="bi bi-people-fill"></i>
@@ -304,6 +312,14 @@
                             <a class="nav-link" href="/admin_team_icons" style="color: #ced4da">
                                 <i class="bi bi-people-fill"></i>
                                 Иконки для номеров
+                            </a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin_portfoliodetails">
+                                <i class="bi bi-people-fill"></i>
+                              Инфа о номере
                             </a>
                         </li>
 

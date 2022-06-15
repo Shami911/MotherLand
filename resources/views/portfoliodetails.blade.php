@@ -27,13 +27,12 @@
       <div class="container" data-aos="fade-up">
 
         <div class="row gy-4">
-            @foreach ($team as $item)
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="/storage/AdminTeam/{{ $item->img }}" alt="">
+                  <img src="/storage/AdminTeam/{{$team->img}}" alt="">
                 </div>
 
                 {{-- <div class="swiper-slide">
@@ -54,26 +53,26 @@
             <div class="portfolio-info">
               <h3>О номере</h3>
               <ul>
-                  <li><strong>{{ $item->name }}</strong> </li>
-                  <li><strong>Категория</strong>: {{ $item->slogan }}</li>
+                  <li><strong></strong> </li>
+                  <li><strong>Категория</strong>:{{$team->name}} </li>
                   <li><strong>Телефон</strong>: <a href="tel:">89280494949</a></li>
               </ul>
             </div>
            
             <div class="portfolio-description">
-              <h2>{{ $item->name }}: полное описание</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
+              <h2>{{$team->name}}: полное описание</h2>
+                <p>
+                  Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+                </p>
             </div>
-        </div>
-        @endforeach
+          </div>
         </div>
 
       </div>
-    </section><!-- End Portfolio Details Section -->
+    </section>
+    <!-- End Portfolio Details Section -->
 
-  </main><!-- End #main -->
+</main><!-- End #main -->
 
 
 

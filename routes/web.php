@@ -24,7 +24,7 @@ use App\Http\Controllers\TelegramController;
 Route::get('/', [MainController::class, 'welcome'])->name('home');
 Route::get('/contact', [MainController::class, 'contact']);
 Route::POST('/send_book', [MainController::class, 'send_book']);
-Route::get('/portfoliodetails', [MainController::class, 'portfoliodetails']);
+Route::get('/portfoliodetails/{id}', [MainController::class, 'portfoliodetails']);
 
 
 // Route::POST('/send_book', [TelegramController::class, 'get_data_from_tg']);
@@ -121,6 +121,11 @@ Route::middleware('auth')->group(function () {
     Route::post('/add_team_icon/{id}', [AdminController::class, 'add_team_icon']);
     Route::post('/edit_team_icon/{id}', [AdminController::class, 'edit_team_icon']);
     Route::get('/delete_team_icon/{id}', [AdminController::class, 'delete_team_icon']);
+
+    Route::get('/admin_portfoliodetails', [AdminController::class, 'admin_portfoliodetails'])->name('admin_portfoliodetails');
+    Route::post('/add_portfoliodetails/{id}', [AdminController::class, 'add_portfoliodetails']);
+    Route::post('/edit_portfoliodetails/{id}', [AdminController::class, 'edit_portfoliodetails']);
+    Route::get('/delete_portfoliodetails/{id}', [AdminController::class, 'delete_portfoliodetails']);
     //Admin_team Section end 
     
     // Contact start

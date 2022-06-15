@@ -88,12 +88,13 @@ public function contact()
             return 2;
         }
     }
-    public function portfoliodetails()
+
+    public function portfoliodetails($id)
     {
     $portfoliodetails = new portfoliodetails();
-    $team = new AdminTeam(id);
+    $team =  AdminTeam::find($id);
 
-    return view('portfoliodetails', ['portfoliodetails' => $portfoliodetails->all(),'team' => $team->find(id),]);
+    return view('portfoliodetails', ['portfoliodetails' => $portfoliodetails->all(),'team' => $team->find($id),]);
     }
 
 }

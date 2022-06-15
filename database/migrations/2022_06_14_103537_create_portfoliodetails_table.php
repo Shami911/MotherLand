@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::create('portfoliodetails', function (Blueprint $table) {
             $table->id();
+            $table->text('img');
+            $table->text('slogan');
             $table->timestamps();
         });
     }
