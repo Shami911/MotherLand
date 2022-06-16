@@ -91,12 +91,11 @@ public function contact()
 
     public function portfoliodetails($id)
     {
-    $portfoliodetails = new portfoliodetails();
+    $portfoliodetails = portfoliodetails::where('nomer', '=', $id)->first();
+    $portfoliodetails_count = portfoliodetails::where('nomer', '=', $id)->count();
     $team =  AdminTeam::find($id);
 
-    return view('portfoliodetails', ['portfoliodetails' => $portfoliodetails->all(),'team' => $team->find($id),]);
+    return view('portfoliodetails', ['portfoliodetails' => $portfoliodetails, 'portfoliodetails_count' => $portfoliodetails_count, 'team' => $team->find($id),]);
     }
 
 }
-
-// https://api.telegram.org/bot5509141318:AAHUhJUGaRw_NXx30gsUAJNCtaCysymSA0Q/getUpdates

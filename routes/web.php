@@ -123,7 +123,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/delete_team_icon/{id}', [AdminController::class, 'delete_team_icon']);
 
     Route::get('/admin_portfoliodetails', [AdminController::class, 'admin_portfoliodetails'])->name('admin_portfoliodetails');
-    Route::post('/add_portfoliodetails/{id}', [AdminController::class, 'add_portfoliodetails']);
+    Route::post('/add_portfoliodetails', [AdminController::class, 'add_portfoliodetails']);
     Route::post('/edit_portfoliodetails/{id}', [AdminController::class, 'edit_portfoliodetails']);
     Route::get('/delete_portfoliodetails/{id}', [AdminController::class, 'delete_portfoliodetails']);
     //Admin_team Section end 
@@ -149,8 +149,8 @@ Route::middleware('auth')->group(function () {
 Route::middleware('guest')->group(function () {
     Route::get('/login', [AuthController::class, 'login'])->name('login');
     Route::post('/login', [AuthController::class, 'login_process']);
-    // Route::get('/register', [AuthController::class, 'register']);
-    // Route::post('/register', [AuthController::class, 'register_process']);
+    Route::get('/register', [AuthController::class, 'register']);
+    Route::post('/register', [AuthController::class, 'register_process']);
 });
 // Регистрация и авторизация END 
 // Если пользватель  авторизовался  END

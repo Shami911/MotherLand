@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->text('img');
             $table->text('slogan');
+            $table->text('nomer');
             $table->timestamps();
         });
     }

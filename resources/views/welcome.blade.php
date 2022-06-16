@@ -331,7 +331,7 @@
     <section id="breadcrumbs" class="breadcrumbs">
         <div class="container">
 
-            <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-center">
                 <h2>Прайс</h2>
             </div>
 

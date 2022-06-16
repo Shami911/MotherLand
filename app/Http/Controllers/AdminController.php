@@ -804,12 +804,14 @@ public function delete_team($id){
 
 public function admin_portfoliodetails(){
     $portfoliodetails = new portfoliodetails();
-    return view ('admin.admin_portfoliodetails' , ['portfoliodetails' => $portfoliodetails->all()]);
+    $nomera = AdminTeam::all();
+    return view ('admin.admin_portfoliodetails' , ['portfoliodetails' => $portfoliodetails->all(), 'nomera' => $nomera]);
 }  
 public function add_portfoliodetails(Request $data){
     $valid = $data->validate([
-        'img' => ['required', 'image', 'mimetypes:image/jpeg,image/png,image/webp'],
+        'img' => ['required', 'image', 'mimetypes:image/jpeg,image/png,image/webp,image/jpg'],
         'slogan' => ['required'],
+        'nomer' => ['required'],
     ]); 
 
     $file = $data->file('img');
@@ -820,6 +822,7 @@ public function add_portfoliodetails(Request $data){
     $portfoliodetails = new portfoliodetails();
     $portfoliodetails->img = $filename;
     $portfoliodetails->slogan = $data->input('slogan');
+    $portfoliodetails->nomer = $data->input('nomer');
     $portfoliodetails->save();
     return redirect()->route('admin_portfoliodetails');
 }
@@ -835,9 +838,9 @@ public function edit_portfoliodetails($id, Request $data){
         $upload_folder = 'public/portfoliodetails/'; //Создается автоматически
         $file = $data->file('img');
         $filename = $file->getClientOriginalName();
-        Storage::delete($upload_folder . '/' . $team->img);
+        Storage::delete($upload_folder . '/' . $portfoliodetails->img);
         Storage::putFileAs($upload_folder, $file, $filename);    
-        $team->img = $filename;
+        $portfoliodetails->img = $filename;
         Storage::putFileAs($upload_folder, $file, $filename); 
     } else {
         $portfoliodetails->img = $portfoliodetails->img;
