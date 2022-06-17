@@ -273,28 +273,28 @@ if(Gallery::count() == 0) {
             $team = new AdminTeam();
             $team->img = 'testimonials-1.jpg';
             $team->name = 'Имя работника';
-            $team->work = 'Должность работника';
+            $team->work = ' 3000';
             $team->slogan = 'Описание';
             $team->save();
 // второй блок 
             $team = new AdminTeam();
             $team->img = 'testimonials-2.jpg';
             $team->name = 'Имя работника';
-            $team->work = 'Должность работника';
+            $team->work = '3000 ';
             $team->slogan = 'Описание';
             $team->save();
 // третий сблок 
             $team = new AdminTeam();
             $team->img = 'testimonials-3.jpg';
             $team->name = 'Имя работника';
-            $team->work = 'Должность работника';
+            $team->work = '3000';
             $team->slogan = 'Описание';
             $team->save();
 // четвертый блок 
             $team = new AdminTeam();
             $team->img = 'testimonials-5.jpg';
             $team->name = 'Имя работника';
-            $team->work = 'Должность работника';
+            $team->work = '3000';
             $team->slogan = 'Описание';
             $team->save();
      }

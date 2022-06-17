@@ -1,6 +1,27 @@
-@media (min-width: 1260px) {
+@media (min-width: 1000px) {
     .navbar__mobile {
         display: none;
     }
+    .btn {
+        display: flex;
+        margin-bottom: 10px;
+    }
+    .pagetitle {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+    /* .col {
+        width: 100%;
+    } */
+@media (max-width: 667px) {
+    .col {
+        width: 100%;
+    }
+    .pagetitle {
+        width: 100%;
+        margin-top: 70px;
+    }
+    
 
 }

@@ -17,7 +17,6 @@
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
         rel="stylesheet">
-
     <!-- Vendor CSS Files -->
     <link href="/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
     <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
@@ -193,10 +192,10 @@
 <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
 <script src="/assets/vendor/waypoints/noframework.waypoints.js"></script>
-<script src="/assets/vendor/php-email-form/validate.js"></script>
+<script src="/assets/vendor/php-email-form/validate.js"></script> --}}
 
 <!-- Template Main JS File -->
-<script src="/assets/js/main.js"></script> --}}
+{{-- <script src="/assets/js/main.js"></script> --}}
 
 
 
@@ -211,7 +210,7 @@
 
 <!-- Template Main JS File -->
 <script src="/assets/js/main.js"></script>
-<script src="/https://unpkg.com/vue@3"></script>
+<script src="https://unpkg.com/vue@3"></script>
 <script src="/assets/js/booking.js"></script>
 
 

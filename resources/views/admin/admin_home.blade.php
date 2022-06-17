@@ -15,7 +15,7 @@
                         </ol>
                     </nav>
                 </div>
-                <button class="btn btn-carousel ms-auto text-white mt-2"  data-bs-toggle="modal" data-bs-target="#addcount" style="background: #94bd1b">Добавить cлайдер</button>
+                <button class="btn btn-carousel ms-auto text-white"  data-bs-toggle="modal" data-bs-target="#addcount" style="background: #94bd1b">Добавить cлайдер</button>
             </div>
             <!-- End Page Title -->
         </div>

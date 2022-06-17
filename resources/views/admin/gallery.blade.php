@@ -28,7 +28,7 @@
                             <option value="{{$item->id}}">{{$item->title}}</option>
                             @endforeach
                           </select>
-                          <a class="btn btn-danger" href="/delete_point_gallery/{{$item->id}}">Удалить</a>
+                          {{-- <a class="btn btn-danger" href="/delete_point_gallery/{{$item->id}}">Удалить</a> --}}
 
                       </form>
                     </div>
